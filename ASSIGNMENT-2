@@ -1,0 +1,95 @@
+1:-WRITE A JAVA PROGRAM FOR BANK ACCOUNT?
+P
+2:-WRITE A JAVA PROGRAM FOR FACTORIAL OF 5&10?
+Program:-
+import java.util.*;
+class Factorial{
+    int Factorial(int num) {
+        if (num == 0 || num == 1) {
+            return 1;
+        } else {
+            return num * Factorial(num - 1);
+        }
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Factorial factorial = new Factorial();
+        int num1 = 5;
+        int factorial5 = factorial.Factorial(num1);
+        System.out.println("Factorial of " + num1 + " is: " + factorial5);
+        int num2 = 10;
+        int factorial10 = factorial.Factorial(num2);
+        System.out.println("Factorial of " + num2 + " is: " + factorial10);
+    }
+}
+Output:-
+Factorial of 5 is: 120Factorial of 10 is: 3628800
+
+
+
+
+
+3:-WRITE  A JAVA PROGRAM FOR ARMSTRONG NUMBER OR NOT?
+Program:-
+import java.util.*;
+import java.util.Scanner;
+class armstrongnum
+{
+public static void main(String[] args)
+{
+try
+{
+Scanner input=new Scanner(System.in); 
+System.out.print("enter a number:");
+int n=input.nextInt(); 
+int N=n; 
+int a=0; 
+while(N!=0) 
+{ 
+int rem=N%10; 
+a=a+(rem*rem*rem); 
+N=N/10; 
+} 
+if(n==a) 
+System.out.print("Given number is Armstrong number");
+else 
+System.out.print("given number is Not an Armstrong");
+}
+catch(Exception e)
+{
+System.out.print(" enter valid");
+}
+}
+}
+Output:-
+enter a number:121
+given number is Not an Armstrong
+
+
+
+
+4:-WRITE A JAVA PROGRAM FOR SUM OF DIGITS?
+PROGRAM:-
+import java.util.Scanner;  
+public class SumOfDigits
+{  
+public static void main(String args[])  
+{  
+int number, digit, sum = 0;  
+Scanner sc = new Scanner(System.in);  
+System.out.print("Enter the number: ");  
+number = sc.nextInt();  
+while(number > 0)  
+{  
+digit = number % 10;  
+sum = sum + digit;  
+number = number / 10;  
+}  
+System.out.println("Sum of Digits: "+sum);  
+}  
+}  
+Output:-
+Enter the number: 645
+Sum of Digits: 15
